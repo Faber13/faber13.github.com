@@ -4149,7 +4149,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
   padding: 10px 20px 10px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
@@ -5565,7 +5565,7 @@ a.badge:hover {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 500px;
   overflow: hidden;
 }
 
@@ -5643,7 +5643,7 @@ a.badge:hover {
 }
 
 .carousel-control.right {
-  right: 15px;
+  right: 5px;
   left: auto;
 }
 
@@ -5666,7 +5666,7 @@ a.badge:hover {
 
 .carousel-caption h4,
 .carousel-caption p {
-  line-height: 20px;
+  line-height: 10px;
   color: #ffffff;
 }
 
@@ -5725,3 +5725,23 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+
+.images{
+ margin-top: 40px;
+ margin-bottom: 40px;
+  }
+
+#large{
+box-shadow:10px 10px 20px #888;
+}
+
+
+.hero-unit {
+  padding: 40px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  border-bottom:solid #d9d9d9 2px;
+  box-shadow:0 5px 5px rgba(0,0,0,0.45);
+}
+
