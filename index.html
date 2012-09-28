@@ -127,20 +127,21 @@ to the public from 1980, and from 1986 access was provided to the interior of th
 <img src="images/Foto1.jpg " class="img-polaroid"/><br /><br /><br /><br />
 
 
-<h1 id ="project"><img src="images/icons/glyphicons_030_pencil.png" height="40" width="28"/> My Project</h1> <hr>
-<p>The project is written in Javascript and using functions written in plasm for 3D modeling of the villa. The villa has been substantially broken down into 3 different objects, ie the outbuildings, the stairway entrance and the villa. <br>For the implementation, the project has been divided into 3 pieces:
-  <ol><li>Porch with colonnade ;</li>
+<h1 id ="project"><img src="images/icons/glyphicons_030_pencil.png" height="40" width="28"/>
+  My Project</h1> <hr>
+<p>The project is written in Javascript and using functions written in plasm for 3D modeling of the  villa. The villa has been substantially broken down into 3 different objects, ie the outbuildings, the stairway entrance and the villa. <br>For the implementation, the project has been divided into 3 pieces:
+  <ol><li>Porticus with colonnade ;</li>
       <li>Walls ;</li>
       <li>Roof  ;</li></ol><br></p>
 
-  <h1><small>The porch with colonnade</small></h1><hr>
-   <p>This piece of project has been subdivided into some pieces: the stairs, the colonnade and the porch. The stairs have been designed with SIMPLEX GRID method; the porch has been realized with BEZIER, HERMITE and NUBS curves.<br>
+  <h1><small>The porticus with colonnade</small></h1><hr>
+   <p>This piece of project has been subdivided into some pieces: the stairs, the colonnade and the porticus. The stairs have been designed with SIMPLEX GRID method; the porticus has been realized with BEZIER, HERMITE and NUBS curves.<br>
    This is how i realize the column:<br>
    <img src="images/villa/colonna.png" class="img-polaroid"/><br>
+
    The code:
    <pre><code>
-
-var column = function(r,h,off_x,off_y,off_z,closer){
+ var column = function(r,h,off_x,off_y,off_z,closer){
 
     var columnpoint      = [[r+0.1,0,0],[r+0.08,0,h*0.04],[r+0.06,0,h*0.08],[r+0.03,0,h*0.12],
                             [r,0,h*0.15],[r-0.05,0,h]]
@@ -161,10 +162,12 @@ var column = function(r,h,off_x,off_y,off_z,closer){
     }
 };
 </code></pre><br>
-  This is the porch<br>
+
+  This is the porticus<br>
   <img src="images/villa/porticato_lato.jpg" class="img-polaroid"/><br>
+
    The code:
-   <pre><code>
+  <pre><code>
 var p_tetto_avanti1    = [[8,9.4,15.2],[8,15.4,18.5],[0,0,0],[0,0,0]]
 var p_tetto_avanti2    = [[8,15.4,18.5],[8,21.4,15.2],[0,0,0],[0,0,0]]
 var p_tetto_avanti21   = [[8,9.9,15.2],[8,15.4,18],[0,0,0],[0,0,0]]
@@ -198,14 +201,16 @@ var s1                 = BEZIER(S1)([c11,c_arco2])
 var s2                 = BEZIER(S1)([c12,c_arco])
 var s3                 = BEZIER(S1)([c11,c12])
 </code></pre><br>
+
 Assembled: <br>
  <img src="images/villa/porticato.png" class="img-polaroid"/><br>
 </p><br>
 
   <h1><small>The roof</small></h1><hr>
   It has been realized using NUBS and ROTATIONAL SURFACE.
-<img src="images/villa/tetto.png" class="img-polaroid"/><br/>
-The code : <br>
+  <img src="images/villa/tetto.png" class="img-polaroid"/><br/>
+
+  The code : <br>
 <pre><code>
 var puntiCupola_1      = [[8.5,0,0],[8.5,0,1],[8.5,0,1.7]]
 var knots_cupola       = generate_knots(puntiCupola_1); // Vale per tutte e 19
@@ -280,9 +285,6 @@ var curvaMapRotSurf_3  = MAP(curvaRotSurf_3)(dominioRot);
       <div class="carousel-caption">
                       <p>Last view</p>
                     </div></div>
-
-
-
 
 
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
